@@ -32,7 +32,7 @@ This MCP server provides six core file management tools:
 ## 🏗️ Project Structure
 
 ```
-mcp-fileAssistant/
+vpbhaskar-mcp-fileassistant/
 ├── index.js              # Main MCP server implementation
 ├── package.json          # Project dependencies and metadata
 ├── workspace/            # Directory where all file operations occur
@@ -55,8 +55,8 @@ mcp-fileAssistant/
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
-cd mcp-fileAssistant
+git clone https://github.com/iamvpbhaskar/vpbhaskar-mcp-fileassistant.git
+cd vpbhaskar-mcp-fileassistant
 ```
 
 2. **Install dependencies:**
