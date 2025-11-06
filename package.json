@@ -1,0 +1,28 @@
+{
+  "name": "vpbhaskar-mcp-fileassistant",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Model Context Protocol (MCP) server providing file management capabilities for AI assistants",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "file-management",
+    "ai-assistant",
+    "cursor-ide",
+    "file-operations",
+    "workspace"
+  ],
+  "author": "Ved Prakash Bhaskar",
+  "license": "ISC",
+  "dependencies": { 
+    "@modelcontextprotocol/sdk": "^1.21.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
