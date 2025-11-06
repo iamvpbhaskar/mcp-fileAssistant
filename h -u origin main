@@ -1,0 +1,24 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 80696c3..6e4f7f5 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -32,7 +32,7 @@[m [mThis MCP server provides six core file management tools:[m
+ ## 🏗️ Project Structure[m
+ [m
+ ```[m
+[31m-mcp-fileAssistant/[m
+[32m+[m[32mvpbhaskar-mcp-fileassistant/[m
+ ├── index.js              # Main MCP server implementation[m
+ ├── package.json          # Project dependencies and metadata[m
+ ├── workspace/            # Directory where all file operations occur[m
+[36m@@ -55,8 +55,8 @@[m [mmcp-fileAssistant/[m
+ [m
+ 1. **Clone the repository:**[m
+ ```bash[m
+[31m-git clone <your-repo-url>[m
+[31m-cd mcp-fileAssistant[m
+[32m+[m[32mgit clone https://github.com/iamvpbhaskar/vpbhaskar-mcp-fileassistant.git[m
+[32m+[m[32mcd vpbhaskar-mcp-fileassistant[m
+ ```[m
+ [m
+ 2. **Install dependencies:**[m

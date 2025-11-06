@@ -32,7 +32,7 @@ This MCP server provides six core file management tools:
 ## 🏗️ Project Structure
 
 ```
-vpbhaskar-mcp-fileassistant/
+mcp-fileAssistant/
 ├── index.js              # Main MCP server implementation
 ├── package.json          # Project dependencies and metadata
 ├── workspace/            # Directory where all file operations occur
@@ -55,8 +55,8 @@ vpbhaskar-mcp-fileassistant/
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/iamvpbhaskar/vpbhaskar-mcp-fileassistant.git
-cd vpbhaskar-mcp-fileassistant
+git clone <your-repo-url>
+cd mcp-fileAssistant
 ```
 
 2. **Install dependencies:**
@@ -121,7 +121,6 @@ Open `mcp.json` and add the following configuration:
   }
 }
 ```
-
 ### Step 3: Restart Cursor IDE
 
 After adding the configuration, restart Cursor IDE to load the MCP server.
