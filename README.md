@@ -1,6 +1,12 @@
 # MCP File Assistant Server
 
+[![npm version](https://img.shields.io/npm/v/vpbhaskar-mcp-fileassistant.svg)](https://www.npmjs.com/package/vpbhaskar-mcp-fileassistant)
+[![npm](https://img.shields.io/npm/dm/vpbhaskar-mcp-fileassistant.svg)](https://www.npmjs.com/package/vpbhaskar-mcp-fileassistant)
+
 A **Model Context Protocol (MCP)** server that provides AI assistants with powerful file management capabilities. This server enables AI tools like Cursor IDE to read, write, edit, list, and delete files within a designated workspace folder through a standardized protocol.
+
+**📦 Available on npm:** [`vpbhaskar-mcp-fileassistant`](https://www.npmjs.com/package/vpbhaskar-mcp-fileassistant) (v1.0.4)  
+**🔗 GitHub Repository:** [iamvpbhaskar/mcp-fileAssistant](https://github.com/iamvpbhaskar/mcp-fileAssistant)
 
 ## 🎯 What is This Project?
 
@@ -41,7 +47,6 @@ mcp-fileAssistant/
 └── .gitignore           # Git ignore file (excludes node_modules, etc.)
 ```
 
-**Note:** Personal files like `resume.html`, `profile.txt`, and `note.txt` are excluded from version control and documentation as they contain personal information.
 
 ## 🚀 Getting Started
 
@@ -53,9 +58,22 @@ mcp-fileAssistant/
 
 ### Installation
 
+#### Option 1: Install from npm (Recommended)
+
+```bash
+npm install -g vpbhaskar-mcp-fileassistant
+```
+
+Or install locally in your project:
+```bash
+npm install vpbhaskar-mcp-fileassistant
+```
+
+#### Option 2: Clone from GitHub
+
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/iamvpbhaskar/mcp-fileAssistant.git
 cd mcp-fileAssistant
 ```
 
@@ -84,43 +102,59 @@ The MCP configuration file is located at:
 
 Open `mcp.json` and add the following configuration:
 
+#### If installed via npm (Global):
 ```json
 {
   "mcpServers": {
     "vpbhaskar-mcp-fileassistant": {
       "command": "node",
-      "args": ["<absolute-path-to-project>/mcp-fileAssistant/index.js"],
+      "args": ["<npm-global-path>/node_modules/vpbhaskar-mcp-fileassistant/index.js"],
       "env": {}
     }
   }
 }
 ```
 
-**Example for Windows:**
+#### If installed locally or cloned from GitHub:
 ```json
 {
   "mcpServers": {
     "vpbhaskar-mcp-fileassistant": {
       "command": "node",
-      "args": ["C:\\Users\\rai70\\Desktop\\mcp-fileAssistant\\index.js"],
+      "args": ["<absolute-path-to-project>/vpbhaskar-mcp-fileassistant/index.js"],
       "env": {}
     }
   }
 }
 ```
 
-**Example for macOS/Linux:**
+**Example for Windows (local installation):**
 ```json
 {
   "mcpServers": {
     "vpbhaskar-mcp-fileassistant": {
       "command": "node",
-      "args": ["/Users/username/projects/mcp-fileAssistant/index.js"],
+      "args": ["C:\\Users\\YourUsername\\Desktop\\mcp-fileAssistant\\index.js"],
       "env": {}
     }
   }
 }
 ```
+
+**Example for macOS/Linux (local installation):**
+```json
+{
+  "mcpServers": {
+    "vpbhaskar-mcp-fileassistant": {
+      "command": "node",
+      "args": ["/Users/username/projects/vpbhaskar-mcp-fileassistant/index.js"],
+      "env": {}
+    }
+  }
+}
+```
+
+**Note:** To find your npm global path, run: `npm root -g`
 ### Step 3: Restart Cursor IDE
 
 After adding the configuration, restart Cursor IDE to load the MCP server.
@@ -306,7 +340,7 @@ Ask Cursor: *"Read all .txt files and create a combined document"*
 // Server initialization
 const server = new McpServer({
   name: "File MCP Server",
-  version: "1.0.0",
+  version: "1.0.4",
   description: "File management capabilities"
 });
 
@@ -352,6 +386,22 @@ server.registerTool(
 - **Input Validation**: All inputs are validated using Zod schemas
 - **Error Handling**: Proper error handling prevents crashes and information leakage
 - **No External Network**: This server doesn't make external network calls
+
+## 📦 NPM Package
+
+This package is published on npm and can be installed globally or locally:
+
+```bash
+# Global installation
+npm install -g vpbhaskar-mcp-fileassistant
+
+# Local installation
+npm install vpbhaskar-mcp-fileassistant
+```
+
+**Package:** [vpbhaskar-mcp-fileassistant](https://www.npmjs.com/package/vpbhaskar-mcp-fileassistant)  
+**Version:** 1.0.4  
+**Author:** Ved Prakash Bhaskar
 
 ## 📝 License
 

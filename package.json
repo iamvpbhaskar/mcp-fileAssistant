@@ -1,9 +1,15 @@
 {
   "name": "vpbhaskar-mcp-fileassistant",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "type": "module",
   "description": "A Model Context Protocol (MCP) server providing file management capabilities for AI assistants",
   "main": "index.js",
+  "bin": {
+    "vpbhaskar-mcp-fileassistant": "index.js"
+  },
+  "mcp": {
+    "server": "./index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
